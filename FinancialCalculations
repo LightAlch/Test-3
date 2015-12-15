@@ -1,0 +1,22 @@
+// calculations
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class FinancialCalculations
+{ 
+ 
+ public static double getDiscount(double monthP, double inRate, int nYears)
+ {
+		int months = nYears * 12;
+        double mIntRate = inRate/12/100;
+        double futureValue = 0;
+        for (int i = 1; i <= months; i++)
+        {
+            futureValue = (futureValue + monthP) *
+            (1 + mIntRate);
+        }
+        return futureValue;
+    }
+	
+}

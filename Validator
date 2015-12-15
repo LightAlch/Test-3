@@ -1,0 +1,12 @@
+import java.math.BigDecimal;
+import javax.swing.*;
+import javax.swing.text.JTextComponent;
+
+public class Validator
+{
+ public static boolean isInteger(JTextComponent c, String title)
+ //method will check for data entry in required fields
+ //the catch block will pop up box
+ show showMessage(c,title+"is a required field. \n" + "Please re-enter.");
+ //then the focus will be check for data entry
+ 

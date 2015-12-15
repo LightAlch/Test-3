@@ -1,0 +1,23 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class FutureValueFrame extends JFrame 
+ {
+  private void centerWindow(Window w)
+ {
+  Toolkit tk = Toolkit.getDefaultToolkit();
+  Dimension d = tk.getScreenSize();
+  setLocation((d.width-w.getWidth())/2, (d.height-w.getHeight())/2);
+}
+  public FutureValueFrame(String title)
+   {
+    super(title);
+    setSize(480, 350);
+    centerWindow(this);
+	
+	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+	
+}
+ 
+}

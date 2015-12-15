@@ -1,0 +1,14 @@
+import javax.swing.*;
+
+public class FutureValueApp
+{
+
+ public static void main(String[] args)
+    {
+	
+     JFrame Future = new FutureValueFrame("Future Value Calculation");
+      JPanel FutureP = new FutureValuePanel();
+     Future.add(FutureP);
+	 Future.setVisible(true);
+    }
+ }
